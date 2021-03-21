@@ -110,7 +110,7 @@ else if(FavoriteMovieType==="adventures"){
 
 
  var numMOVIErep=prompt(" How many times do you like repeating the movie?");
-var repimage=null;
+var repimage ;
 
  for(var i=0;i<=numMOVIErep;i++){
 repimage+='<br><img src="https://miro.medium.com/max/1120/0*ckAOzr7BW6fhFeGK.jpg" alt="movie"hight="200" width="100">'
