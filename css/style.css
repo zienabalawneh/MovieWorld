@@ -1,0 +1,153 @@
+body {
+
+    background-color:hsl(49°, 33%, 90%);
+    color:rgb(27, 23, 23);
+
+    margin: 0%;
+  }
+
+  .dark-mode {
+    background-color:rgb(27, 23, 23);
+    color:hsl(49°, 33%, 90%);
+    margin: 0%;
+  }
+
+
+
+ header{
+color:#AC0D0D;
+background-color: #F0C929;
+height:50px;
+padding-top: 1%;
+}
+
+header h1{
+
+float: left;
+margin-left: 1%;
+margin-top: 0%;
+}
+header nav {
+   float: left;
+   margin-left:-15px ;
+   margin-top: -10px;
+    font-size:21px;
+
+}
+
+
+header nav ul li {
+
+    display: inline-block;
+}
+
+header nav ul li a {
+
+    color:#AC0D0D ;
+
+    text-decoration: none;
+    padding: 5px;;
+}
+
+header button{
+
+float: right;
+margin-right: 10px;
+
+}
+ header img{
+
+
+   margin-top:-10px;
+ }
+
+
+ #first{
+
+    font-size:20px;
+   /* color:#F48B29;
+    border-radius: 15px;
+    border-style:solid;*/
+    text-align: center;
+    
+    border: 5px solid #AC0D0D;
+    
+/*border-left: 6px solid #AC0D0D;
+background-color:#fed049;
+ margin-top: 250px;*/
+padding-top:280px;
+color:#AC0D0D ;
+ }
+
+
+/*
+
+ .firstdiv{
+
+    font-size:20px;color:#F0C929; box-shadow:#AC0D0D ;
+    border-style:dashed;
+    text-align: center;
+    margin-right:500px;
+    height:520px;
+    width:300px;
+    display: inline-block;
+
+    margin: 50px;
+ }
+
+ .secdiv{
+     font-size:20px;
+       border-style:dashed;
+       ext-align: center;
+       color:#F0C929; box-shadow:#AC0D0D ;
+       margin-right:600px;height:519px;width:300px;
+      /* margin-top:-500px;*/
+
+    
+    
+
+
+  
+    #second{
+        color: #AC0D0D ;
+     
+        margin-bottom: 30px;
+    }
+    .image-container{
+        text-align: center;
+        display: inline-block;
+        height: 450px;
+       
+    }
+
+    .image-container img {
+        margin-bottom: 20px;
+        height: 90%;
+        padding-right: 58px;
+        
+    }
+    
+    .image-container h2 {
+        margin-bottom: 20px;
+      
+        padding-right: 58px;
+        
+    }
+
+
+    .image-container h3 a {
+        margin-bottom: 20px;
+      
+        padding-right: 58px;
+        
+    }
+    
+
+    footer{
+
+background-color:#F0C929; ;
+color:#AC0D0D;
+text-align: center;
+height:50px;
+font-size: 35px;
+    }

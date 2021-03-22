@@ -3,80 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <title>Movie world</title>
-  <style>
-    body {
-
-      background-color: white;
-      color: black;
-
-    }
-
-    .dark-mode {
-      background-color: black;
-      color: wheat;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+ 
 </head>
 
 
 <body>
   <header>
-    <h1 style="color:tomato">Movie World</h1>|
+    <h1 >Movie World</h1>
     <nav>
-      <a style="font-size:30px;color:tomato;" href="#">Home</a> |
-      <a style="font-size:30px;color:tomato;" href="#">about us </a> |
-      <a style="font-size:30px;color:tomato;" href="#">conect us</a> |
-      <p>Click the button to toggle between dark and light mode for this page.<button onclick="myFunction()">Toggle dark
-          mode</button>
+      <ul>
+       <li>   <a  href="#">Home</a>   </li>
+    
+    
+      <li> <a  href="#">about us </a>  </li>
 
+</ul>
+  </nav>
+     <button onclick="myFunction()">Dark Mode</button>
         <script>
           function myFunction() {
             var element = document.body;
             element.classList.toggle("dark-mode");
           }
         </script>
-      </p>
+      
 
-    </nav>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWo7gZF7dvWQ6mE20YN-PDalJsR4X7YdN1Vw&usqp=CAU"
-      alt="" width="1500px" height="170">
+  
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWo7gZF7dvWQ6mE20YN-PDalJsR4X7YdN1Vw&usqp=CAU"
+      alt="" width="1534px" height="170">
   </header>
+
+       
+
+     
+
+
+
+<br> <br><br>
+
   <main>
-    <section style="font-size:20px;color: green;border-radius: 15px;border-style:solid;text-align: center;">
 
-      <script src="javascript/app.js">
-
-
-
-
-
-
-      </script>
-
-
-
-
-
-
-      <p>
-
+ <section id="first">  
+   <p>
         <b>MOVIE:</b> recorded moving images that tell a story that people watch on screen or television
 
-      </p>
-
-
-
-
-
-
+    </p>  
+  <script src="javascript/app.js"></script>
 
     </section>
+
+
+   
+    
     <section>
 
-      <div style="font-size:20px;color: tomato;
-        border-style:dashed;text-align: center;
-        box-shadow: rgb(10, 63, 10);
-        margin-right:500px;height:520px;width:300px;">
+     <!--<div class="firstdiv">
         <h2>Comedy Movies</h2>
         <img src="https://images-na.ssl-images-amazon.com/images/I/91tXzecvy-L._SL1500_.jpg" alt="Comedy movies"
           height="400px" width="300px">
@@ -84,10 +66,7 @@
         <a href="https://www.youtube.com/watch?v=16tu42cQbrU">Comedy Movies</a>
       </div>
 
-      <div style="font-size:20px;color: tomato;
-       border-style:dashed;text-align: center;
-       box-shadow: rgb(10, 63, 10);
-       margin-left:400px;height:519px;width:300px;margin-top:-500px ;">
+      <div class="firstdiv">
         <h2>Action Movies</h2>
         <img src="https://netstorage-tuko.akamaized.net/images/20be4e65f4d7335d.jpg?imwidth=1200&impolicy=default-amp"
           alt="Action Movies" height="400px" width="300px">
@@ -115,7 +94,65 @@
         <a href="https://www.youtube.com/watch?v=cbXvIU1F7BM">Adventure Movies</a>
       </div>
 
+    </section>-->
+
+
+
+
+
+     <section id="second">
+
+      <div class="image-container">
+        <h2>Comedy Movies</h2>
+       <h3><a href="https://www.youtube.com/watch?v=16tu42cQbrU">Comedy Movies</a></h3> 
+
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91tXzecvy-L._SL1500_.jpg" alt="Comedy movies"
+        height="400px" width="300px">
+
+
+        </div>
+        
+
+        <div class="image-container">
+          <h2>Action Movies</h2>   
+          <h3> <a href="https://www.youtube.com/results?search_query=action+movies+2019">Action Movies</a></h3> 
+
+
+          <img src="https://netstorage-tuko.akamaized.net/images/20be4e65f4d7335d.jpg?imwidth=1200&impolicy=default-amp"
+            alt="Action Movies" height="400px" width="300px">
+          
+         
+        </div>
+   
+
+        <div class="image-container">
+        
+        <h2>Animation Movies</h2> 
+        <h3> <a href="https://www.youtube.com/watch?v=bKweNJ3HsOo">Animation Movies</a></h3>
+        <img src="https://i.pinimg.com/736x/6a/e8/7c/6ae87c963310939491b35217b9fcff9d.jpg" alt="Animation movies"
+          height="400px" width="300px">
+        
+
+        </div>
+      
+        
+        <div class="image-container">
+         
+         <h2>Adventure Movies</h2>
+        <h3><a href="https://www.youtube.com/watch?v=cbXvIU1F7BM">Adventure Movies</a></h3> 
+         
+         <img src="https://netstorage-legit.akamaized.net/images/870445658d765747.jpg" alt="Animation movies"
+          height="400px" width="300px">
+        
+        
+
+
+        </div>
+
+
+
     </section>
+    
 
   </main>
 
@@ -124,7 +161,7 @@
 
 
   <footer>
-    <p style="color: darkseagreen;font-size:20px;"> zienab alawneh &copy;</p>
+    <p> zienab alawneh &copy;</p>
   </footer>
 
 
