@@ -1,16 +1,27 @@
+
+
 var FirstNam = prompt("Please enter your name");
+
+function hi(){
+
 if(FirstNam===null||FirstNam===""){
     var sayhello ="hi ,welcome to in the MOVIEWORLD";
 }else{var sayhello ="hi "+FirstNam+",welcome to in the MOVIEWORLD";}
 
 
 alert(sayhello);
+}
+hi();
 
 
+var usrage= prompt("Please tell me how old are you? so that I can suggest a suitable movie for your age groups");
 
-var age= prompt("Please tell me how old are you? so that I can suggest a suitable movie for your age groups");
+var FavoriteMovieType ;
+
+getinfo(usrage,FavoriteMovieType);
 
 
+function getinfo(age,FavoriteMovieType){
 
 while(age==0 || age==null||age<0){
    
@@ -18,11 +29,8 @@ while(age==0 || age==null||age<0){
  }
 
 
+ FavoriteMovieType = prompt("Can you tell me what movies you like, are they comedies, action,  animation or adventures? Please tell me so that I can suggest a movie to you");
 
-
-
-
-var FavoriteMovieType = prompt("Can you tell me what movies you like, are they comedies, action,  animation or adventures? Please tell me so that I can suggest a movie to you");
 
 
 while(FavoriteMovieType!=="comedies"&&FavoriteMovieType!=="action"&&FavoriteMovieType!=="animation"&&FavoriteMovieType!=="adventures")
@@ -47,8 +55,26 @@ else if(FavoriteMovieType==="animation"){
     document.write("I suggest you watch this movie I wish you an enjoyable view  ");
     document.write('<a href="https://www.youtube.com/watch?v=bKweNJ3HsOo">'+"mulan"+'</a>');}
 
+}
 
 
+if(age>=18){
+
+    if(FavoriteMovieType==="comedies"){
+        document.write("I suggest you watch this movie I wish you an enjoyable view  ");
+        document.write('<a href="https://www.youtube.com/watch?v=16tu42cQbrU">'+"home alone"+'</a>');}
+        else if(FavoriteMovieType==="action"){
+        document.write("I suggest you watch this movie I wish you an enjoyable view  ");
+        document.write('<a href="https://www.youtube.com/results?search_query=action+movies+2019">'+"spedra man"+'</a>');}
+    else if(FavoriteMovieType==="animation"){ 
+        document.write("I suggest you watch this movie I wish you an enjoyable view  ");
+        document.write('<a href="https://www.youtube.com/watch?v=bKweNJ3HsOo">'+"mulan"+'</a>');}
+    else if(FavoriteMovieType==="adventures"){
+        document.write("I suggest you watch this movie I wish you an enjoyable view  ");
+        document.write('<a  href="https://www.youtube.com/watch?v=cbXvIU1F7BM">'+"mowgli movie"+'</a>');}
+    
+    }
+    }
 
 
     /*var numMOVIE=prompt("How many movies do you want to watch a day, one, two,?");
@@ -70,67 +96,38 @@ else if(FavoriteMovieType==="animation"){
         
     }
 }*/
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if(age>=18){
-
-if(FavoriteMovieType==="comedies"){
-    document.write("I suggest you watch this movie I wish you an enjoyable view  ");
-    document.write('<a href="https://www.youtube.com/watch?v=16tu42cQbrU">'+"home alone"+'</a>');}
-    else if(FavoriteMovieType==="action"){
-    document.write("I suggest you watch this movie I wish you an enjoyable view  ");
-    document.write('<a href="https://www.youtube.com/results?search_query=action+movies+2019">'+"spedra man"+'</a>');}
-else if(FavoriteMovieType==="animation"){ 
-    document.write("I suggest you watch this movie I wish you an enjoyable view  ");
-    document.write('<a href="https://www.youtube.com/watch?v=bKweNJ3HsOo">'+"mulan"+'</a>');}
-else if(FavoriteMovieType==="adventures"){
-    document.write("I suggest you watch this movie I wish you an enjoyable view  ");
-    document.write('<a  href="https://www.youtube.com/watch?v=cbXvIU1F7BM">'+"mowgli movie"+'</a>');}
-
-
-   
-
     
 
 
-}
 
 
- var numMOVIErep=prompt(" How many times do you like repeating the movie?");
-var repimage ;
+
+
+var numMOVIErep=prompt(" How many times do you like repeating the movie?");
+var repimage="" ;
+function getrep(numMOVIErep,repimage) {
+    
 
  for(var i=0;i<=numMOVIErep;i++){
 repimage+='<br><img src="https://miro.medium.com/max/1120/0*ckAOzr7BW6fhFeGK.jpg" alt="movie"hight="200" width="100">'
   
     ;}    
     
-    
-    
     document.write(repimage);
+    }
+    
+    getrep(numMOVIErep,repimage);
    
 
+function helloandage(userage,FirstNam){
 
-
-
-
-
-
-for(var i=0;i<age;i++){
+for(var i=1;i<usrage;i++){
     if(FirstNam===null||FirstNam===""){
         console.log("hi");}
     else {console.log("hi "+FirstNam);}
     }
 
+}
+
+
+helloandage(usrage,FirstNam);
