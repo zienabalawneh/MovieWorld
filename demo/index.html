@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Class 1 Lab</title>
+
+
+    <style>
+        h1 {
+
+
+            background-color: #78C4D4;
+            color: #ad6c80
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">concat us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Class 1 Lab</h1>
+
+  
+        <p> </p>
+        <p> </p>
+        <p> </p>
+
+        <script>
+
+
+
+
+
+            let age = prompt("Tell me how old are you so we can choose a suitable trip together?");
+            let best_season;
+            let clothing;
+            if (age >= 18) {
+    
+                best_season = prompt("Your age," + age + " I expect it is nice to take a trip with the family" + "What is the best trekking season for you?");
+                console.log("Your age",age,"I expect it is nice to take a trip with the family");
+    
+    
+            } else {
+    
+    
+    
+                best_season = prompt("Your age," + age + "  Your age is suitable for trips because you are in the stage of activity and vitality I expect to spend a wonderful time " + "What is the best trekking season for you?");
+    
+                console.log("Your age ",age," Your age is suitable for trips because you are in the stage of activity and vitality I expect to spend a wonderful time");
+            }
+    
+             console.log("your favorite trekking season is ",best_season);
+    
+            let best_transportation = prompt("your favorite trekking season is " + best_season + " What is the best means of transportation on the trips for you, by plane or by car?");
+    
+           
+            if (best_transportation === "plane") {
+                clothing = prompt("you prefer transportation in "+best_transportation+" What do you prefer to wear on trips?");
+    
+                console.log(best_transportation);
+            } else if (best_transportation === "car") {
+    
+                clothing = prompt("you prefer transportation in "+best_transportation+",the car will take longer, but don't worry, you can play music while you're driving, so it's also going to be part of the journey ,What do you prefer to wear on trips?");
+                console.log("you prefer transportation in ",best_transportation,",the car will take longer, but don't worry, you can play music while you're driving, so it's also going to be part of the journey");
+            }
+    
+
+        
+            console.log(clothing,",I expect it to be a suitable choice for trips");
+    
+    
+    document.write("<p style='color:#8F4F4F; background-color:#387C6D;'>Tell me how old are you so we can choose a suitable trip together?"+age + "</p>");
+   
+    document.write("<p style='color:#F8F5F1; background-color:#343f56'>What is the best trekking season for you?"+best_season+ "</p>");
+   
+    document.write("<p style='color:#046582; background-color:#F39189'>What is the best means of transportation on the trips for you, by plane or by car?"+best_transportation +"</p>"); 
+
+
+
+    document.write("<p style='color:#E9896A; background-color:#343f56'> What do you prefer to wear on trips?"+clothing +"</p>"); 
+
+        </script>
+    </main>
+
+    <footer>
+
+    </footer>
+   
+</body>
+
+</html>
